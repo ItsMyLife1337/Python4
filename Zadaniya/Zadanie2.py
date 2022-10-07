@@ -87,3 +87,4 @@ if __name__ == '__main__':
     print('Результат рекурсивного числа Фибоначи:', timeit.timeit(setup=code2, number=1000))
     print('Результат итеративного факториала:', timeit.timeit(setup=code3, number=1000))
     print('Результат итеративного числа Фибоначи:', timeit.timeit(setup=code4, number=1000))
+
