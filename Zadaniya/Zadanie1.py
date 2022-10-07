@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-
 import timeit
 
 
@@ -14,6 +13,8 @@ def factorial(n):
     else:
         return n * factorial(n - 1)
 '''
+
+
 code2 = '''
 def fib(n):
     if n == 0 or n == 1:
@@ -21,6 +22,8 @@ def fib(n):
     else:
         return fib(n - 2) + fib(n - 1)
 '''
+
+
 code3 = '''
 def factorial(n):
     product = 1
@@ -29,6 +32,8 @@ def factorial(n):
         n -= 1
     return product
 '''
+
+
 code4 = '''
 def fib(n):
     a, b = 0, 1
@@ -37,6 +42,8 @@ def fib(n):
         n -= 1
     return a
 '''
+
+
 code5 = '''
 from functools import lru_cache
 @lru_cache
@@ -48,6 +55,8 @@ def factorial(n):
     else:
         return n * factorial(n - 1)
 '''
+
+
 code6 = '''
 from functools import lru_cache
 @lru_cache
